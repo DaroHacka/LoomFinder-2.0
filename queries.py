@@ -36,7 +36,7 @@ def build_query_string(title=None, genre=None, anything=None, author=None, subje
             query.append(f'({anything})')
             query_type = "anything"
         if author:
-            query.append(f'creator:({author})')
+            query.append(f'creator:({author})')  # Here author is included in the query
             query_type = "author"
         if subject:
             query.append(f'subject:({subject})')
@@ -50,7 +50,8 @@ def build_query_string(title=None, genre=None, anything=None, author=None, subje
     page_number = max(page_number, 1)
     query_string = " AND ".join(query)
     query_url = f"https://archive.org/advancedsearch.php?q={query_string}&fl[]=identifier&fl[]=title&fl[]=creator&rows=1000&page={page_number}&output=json"
-    #print(f"Query URL: {query_url}")  # Debugging print statement
+    
+    #print(f"Generated query URL: {query_url}")  # Debugging
 
     return query_url
 
