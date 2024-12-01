@@ -1,5 +1,5 @@
 ![LoomFinder logo](https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png)
-<img src="images/loomfinder_logo.png" alt="LoomFinder Logo" width="200"/>
+<img src="images/loomfinder.png" alt="LoomFinder Logo" width="200"/>
 
 # LoomFinder-2.0                                                                                                                                                                                             
 ##########################
