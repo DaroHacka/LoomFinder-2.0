@@ -70,6 +70,9 @@ page number, but in the new version, the query adapts based on the specificity o
     comprehensive search and retrieves a broader range of relevant content. For the valid_subjects listed in queries.py, you’ll notice
     that the page number varies with each query because it’s randomized. Try loomfinder s:literature multiple times to see how page=n
     varies with each query randomly from 1 to 10.
+    Additionally, the d:date flag changes behavior depending on whether the range is less than 4 years (e.g., d:1800-1804) or 5 years
+    or more (e.g., d:1800-1805). In the first case, query results are fetched on page=1. In the latter case, results are fetched
+    randomly from pages 1 to 10.
   - Weighing Literary Genres vs. Scientific and Cultural Subjects
 
     To ensure a proportional choice between literary genres and scientific/cultural subjects, we applied weighted random selection.
