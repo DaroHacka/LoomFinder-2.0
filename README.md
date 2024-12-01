@@ -68,12 +68,18 @@ page number, but in the new version, the query adapts based on the specificity o
     is different from a user's experience on the web page, where all results are loaded on a single, continuous page, making it harder
     to explore deep into the data manually. By programmatically accessing multiple pages from 1 to 10, the code ensures a more
     comprehensive search and retrieves a broader range of relevant content. For the valid_subjects listed in queries.py, you’ll notice
-    that the page number varies with each query because it’s randomized.
+    that the page number varies with each query because it’s randomized. Try loomfinder s:literature multiple times to see how page=n
+    varies with each query randomly from 1 to 10.
   - Weighing Literary Genres vs. Scientific and Cultural Subjects
 
     To ensure a proportional choice between literary genres and scientific/cultural subjects, we applied weighted random selection.
     This balances the literary genres against the more numerous scientific and cultural subjects, providing a fair representation
     of each category during queries.
+  - Finally, with each query, LoomFinder will ask if you want to save the author to an auto-generated .txt file. If the query returns
+    an unknown author, it won’t prompt you to save. There is a 10-second timer to respond with yes or no; if no response is given, the
+    program will automatically terminate without saving. Additionally, all saved authors can be randomly included in a query by typing
+    loomfinder prose. The prose flag simply selects a random author from the Authors_list.txt file and queries it on Internet Archive.
+    This time it won't ask you to save since they are already on the list. The bigger the list, the more varied the query results.  
 
 ## Positional Arguments
 
