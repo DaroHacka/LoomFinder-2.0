@@ -99,5 +99,7 @@ It is possible to combine different flags
   
 
 If you need some inspiration for your queries just type the following command for a comprehensive list
+
 loomfinder --list-genres
+
 loomfinder --list-subjects
