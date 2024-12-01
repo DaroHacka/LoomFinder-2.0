@@ -1,10 +1,10 @@
-# LoomFinder
+# LoomFinder 2.0
 
 <!-- HTML to resize the image -->
 <img src="https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png" alt="LoomFinder Logo" width="350"/>
 
 
-# LoomFinder-2.0                                                                                                                                                                                             
+                                                                                                                                                                                            
 ##########################
 The new and definitive version 
 
