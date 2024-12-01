@@ -1,4 +1,7 @@
-# LoomFinder-2.0
+![LoomFinder logo](https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png)
+<img src="images/loomfinder_logo.png" alt="LoomFinder Logo" width="200"/>
+
+# LoomFinder-2.0                                                                                                                                                                                             
 ##########################
 The new and definitive version 
 
