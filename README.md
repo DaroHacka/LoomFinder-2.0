@@ -10,24 +10,27 @@ users a chance to explore and discover new reads effortlessly.
 To install LoomFinder 2.0, follow these steps:
 
 1. Clone the Repository:
-   from terminal>
+   from terminal
+   
    git clone https://github.com/DaroHacka/LoomFinder-2.0.git
+   
    cd LoomFinder-2.0
 
-2. Create a New File in /usr/local/bin::
+3. Create a New File in /usr/local/bin::
    
    sudo nano /usr/local/bin/loomfinder
 
-3. Add the Shebang and paste the following Script:
+4. Add the Shebang and paste the following Script:
 
    #!/bin/bash
+   
    exec /home/dan/myscripts/loomfinder_section_code/main.py "$@"
 
-4. Make the Script executable:
+5. Make the Script executable:
    
    sudo chmod +x /usr/local/bin/loomfinder
 
-5. Run loomfinder from terminal>
+6. Run loomfinder from terminal>
    
    loomfinder
 
