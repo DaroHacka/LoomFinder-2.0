@@ -1,10 +1,7 @@
 # LoomFinder
 
-<!-- Markdown to display the image -->
-![LoomFinder logo](https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png)
-
 <!-- HTML to resize the image -->
-<img src="https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png" alt="LoomFinder Logo" width="200"/>
+<img src="https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png" alt="LoomFinder Logo" width="350"/>
 
 
 # LoomFinder-2.0                                                                                                                                                                                             
