@@ -1,7 +1,7 @@
 # LoomFinder 2.0
 
 <!-- HTML to resize the image -->
-<img src="https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png" alt="LoomFinder Logo" width="350"/>
+<img src="https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png" alt="LoomFinder Logo" width="350" align="right"/>
 
 
                                                                                                                                                                                             
