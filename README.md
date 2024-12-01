@@ -4,22 +4,14 @@
 <img src="https://github.com/DaroHacka/LoomFinder-2.0/blob/main/loomfinder.png" alt="LoomFinder Logo" width="350" align="right"/>
 
 
-                                                                                                                                                                                            
-                                                                                                                                                                                            The new and definitive version 
+                                                                                                                                                                                                                             
+The new and definitive version                                                                                                                                                                                           
 
 LoomFinder is a tool created for retrieving random snippets from books hosted on the Internet Archive, offering 
 users a chance to explore and discover new reads effortlessly.
 
 
-
-
-
-
-
-
-
-
-## Installation Instructions
+Installation Instructions
 
 To install LoomFinder 2.0, follow these steps:
 
