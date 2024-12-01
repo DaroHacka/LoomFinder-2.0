@@ -75,7 +75,7 @@ if __name__ == "__main__":
                 elif save_author_choice and save_author_choice.lower() in ["no", "n"]:
                     print("Author's name not saved.")
             except TimeoutExpired:
-                print("No response received. Author's name not saved.")
+                print("Bye")
 
     except Exception as e:
         print(e)
