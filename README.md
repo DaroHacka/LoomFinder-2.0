@@ -59,7 +59,7 @@ page number, but in the new version, the query adapts based on the specificity o
   - For super general categories like "history," "literature," "science," etc., that produce many results, the program fetches results
     from up to 10 different segments of the archive, significantly increasing the chances of successful results. This automated process
     is different from a user's experience on the web page, where all results are loaded on a single, continuous page, making it harder
-    to explore deep into the data manually. By programmatically accessing multiple pages from 1 to 10, the program ensures a more
+    to explore deep into the data manually. By programmatically accessing multiple pages from 1 to 10, the code ensures a more
     comprehensive search and retrieves a broader range of relevant content.
 
 ## Positional Arguments
@@ -74,8 +74,11 @@ page number, but in the new version, the query adapts based on the specificity o
 - **--list-subjects**: List available subjects or specific subfields
 
 how to use it:
+
 loomfinder a:"Emily Bronte"
+
 loomfinder s:literature d:1800-1820
+
 loomfinder g:poetry x:nature
 
 It is possible to combine different flags
