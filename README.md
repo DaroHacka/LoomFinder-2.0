@@ -60,7 +60,7 @@ page number, but in the new version, the query adapts based on the specificity o
   
 
 - New Version:
-  - https://archive.org/advancedsearch.php?q={query_string}&fl[]=identifier&fl[]=title&fl[]=creator&rows=1000& [dynamic]page=[1to10]&output=json
+  - https://archive.org/advancedsearch.php?q={query_string}&fl[]=identifier&fl[]=title&fl[]=creator&rows=1000&page=[1to10]&output=json
   - For minor genres and subjects, results are fetched on `page=1` minor genres usually don't get more than one or two pages of results,
     so limiting the search to page 1 is the best choice to avoid query failures. 
   - For super general categories like "history," "literature," "science," etc., that produce many results, the program fetches results
