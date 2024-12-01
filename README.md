@@ -55,12 +55,19 @@ page number, but in the new version, the query adapts based on the specificity o
 
 - New Version:
   - https://archive.org/advancedsearch.php?q={query_string}&fl[]=identifier&fl[]=title&fl[]=creator&rows=1000& [dynamic]page=[1to10]&output=json
-  - For minor genres and subjects, results are fetched on `page=1`, avoiding unnecessary additional pages.
+  - For minor genres and subjects, results are fetched on `page=1` minor genres usually don't get more than one or two pages of results,
+    so limiting the search to page 1 is the best choice to avoid query failures. 
   - For super general categories like "history," "literature," "science," etc., that produce many results, the program fetches results
     from up to 10 different segments of the archive, significantly increasing the chances of successful results. This automated process
     is different from a user's experience on the web page, where all results are loaded on a single, continuous page, making it harder
     to explore deep into the data manually. By programmatically accessing multiple pages from 1 to 10, the code ensures a more
-    comprehensive search and retrieves a broader range of relevant content.
+    comprehensive search and retrieves a broader range of relevant content. For the valid_subjects listed in queries.py, you’ll notice
+    that the page number varies with each query because it’s randomized.
+  - Weighing Literary Genres vs. Scientific and Cultural Subjects
+
+    To ensure a proportional choice between literary genres and scientific/cultural subjects, we applied weighted random selection.
+    This balances the literary genres against the more numerous scientific and cultural subjects, providing a fair representation
+    of each category during queries.
 
 ## Positional Arguments
 
