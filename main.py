@@ -68,7 +68,7 @@ if __name__ == "__main__":
         # Only save the author's name if not already in the list and not in prose mode
         if not prose_mode and author.lower() != "unknown author":
             try:
-                save_author_choice = input_with_timeout("Do you want to save the author's name? (yes/y/no/n): ", 10)
+                save_author_choice = input_with_timeout("Do you want to save the author's name? (yes/y/no/n): ", 10) # Increase the time, e.g., from 10 seconds to 60 seconds, if you need more time to read the extract and decide whether to save the author.
                 if save_author_choice and save_author_choice.lower() in ["yes", "y"]:
                     save_author(author)
                     print("Author's name saved.")
