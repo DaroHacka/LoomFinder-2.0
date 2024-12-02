@@ -30,7 +30,7 @@ To install LoomFinder 2.0, follow these steps:
 
    #!/bin/bash
    
-   exec /home/dan/myscripts/loomfinder_section_code/main.py "$@"
+   exec /home/user/myscripts/loomfinder_section_code/main.py "$@" #your own path
 
 5. Make the Script executable:
    
