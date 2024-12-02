@@ -30,13 +30,15 @@ To install LoomFinder 2.0, follow these steps:
 
    #!/bin/bash
    
-   exec /home/user/myscripts/loomfinder_section_code/main.py "$@" #your own path
+   exec /home/user/.../loomfinder_section_code/main.py "$@"
 
-5. Make the Script executable:
+   #add your own path to loomfinder folder
+
+6. Make the Script executable:
    
    sudo chmod +x /usr/local/bin/loomfinder
 
-6. Run loomfinder from terminal>
+7. Run loomfinder from terminal>
    
    loomfinder
 
