@@ -5,7 +5,7 @@ from queries import build_query_string, get_random_book
 from parsing import parse_parameters
 from random_selection import get_random_text_segment
 from utilities import save_to_file, save_author, input_with_timeout, TimeoutExpired, get_random_saved_author
-from categories import literature_genres, other_subjects
+from categories import literature_genres, other_subjects, old_journals_and_magazines
 import sys
 
 if __name__ == "__main__":
@@ -14,6 +14,7 @@ if __name__ == "__main__":
     parser.add_argument('--save', action='store_true', help='Save the output to a file')
     parser.add_argument('--list-genres', action='store_true', help='List available genres')
     parser.add_argument('--list-subjects', action='store_true', help='List available subjects')
+    parser.add_argument('--list-journals', action='store_true', help='List available journals and magazines')
     args = parser.parse_args()
 
     # Check for the prose positional argument
@@ -33,6 +34,12 @@ if __name__ == "__main__":
         print("Available subjects:")
         for subject in other_subjects:
             print(f"- {subject}")
+        sys.exit(0)
+
+    if args.list_journals:
+        print("Available journals:")
+        for journal in old_journals_and_magazines:
+            print(f"- {journal}")
         sys.exit(0)
 
     params = args.params
@@ -68,7 +75,7 @@ if __name__ == "__main__":
         # Only save the author's name if not already in the list and not in prose mode
         if not prose_mode and author.lower() != "unknown author":
             try:
-                save_author_choice = input_with_timeout("Do you want to save the author's name? (yes/y/no/n): ", 10)
+                save_author_choice = input_with_timeout("Do you want to save the author's name? (yes/y/no/n): ", 60) #change the quantity if you want more time to decide 
                 if save_author_choice and save_author_choice.lower() in ["yes", "y"]:
                     save_author(author)
                     print("Author's name saved.")

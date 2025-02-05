@@ -23,4 +23,9 @@ other_subjects = [
     'helminthology', 'dipterology', 'acarology'
 ]
 
-default_genres_subjects = literature_genres + other_subjects
+old_journals_and_magazines = [
+	'Chambers Journal of Popular Literature, Science and Arts (first published in 1854 and continued until the 1950s)', 'National Magazine (first published in 1889 and continued until the 1930s)',  'The Magazine of Art (published from May 1878 to July 1904)'
+]
+
+default_genres_subjects = literature_genres + other_subjects + old_journals_and_magazines
+
