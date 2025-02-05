@@ -22,7 +22,10 @@ def save_to_file(content, filename="loomfinder_samples.txt"):
     with open(filename, "a") as file:
         file.write(content + "\n\n")
 
-def save_author(author, filename="/home/dan/myscripts/loomfinder_section_code/Authors_list.txt"): # Add your path to LoomFinder to save from anywhere in the terminal
+# memo: local version
+#def save_author(author, filename="/home/dan/myscripts/loomfinder_section_code/Authors_list.txt"): # Add your path to LoomFinder to save from anywhere in the terminal
+def save_author(author, filename="Authors_list.txt"): # Add your path to LoomFinder folder to save from anywhere in the terminal
+
     try:
         with open(filename, "r") as file:
             authors = file.readlines()

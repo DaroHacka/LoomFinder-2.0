@@ -30,15 +30,25 @@ To install LoomFinder 2.0, follow these steps:
 
    #!/bin/bash
    
-   exec /home/dan/myscripts/loomfinder_section_code/main.py "$@"
+   exec /home/user/.../loomfinder_section_code/main.py "$@"
 
-5. Make the Script executable:
+   #add your own path to loomfinder folder
+
+6. Make the Script executable:
    
    sudo chmod +x /usr/local/bin/loomfinder
 
-6. Run loomfinder from terminal>
+7. Run loomfinder from terminal>
    
    loomfinder
+
+-------------------
+
+notes:
+
+- If you need more time to evaluate whether you want to save the author because you need to read the extract first, you can modify the main.py. A single line comment # will guide you. By default, I set it to 10 seconds because the user might not want to press any key, and by the time they read the book title, the author, and the extract, the program would have terminated. For me personally 60 seconds is ideal.
+
+- Mind that if you want to run loomfinder from anywhere in the terminal, you can. However, if you want to save the author from anywhere when asked by the program, you need to change the file=Authors_list.txt in the utilities.py file to your own path. Otherwise you need to be in the LoomFinder main folder.
 
 -------------------
 I decided to segment LoomFinder 2.0 into multiple files to better manage future implementations. This structure allows for:
@@ -70,6 +80,9 @@ page number, but in the new version, the query adapts based on the specificity o
     comprehensive search and retrieves a broader range of relevant content. For the valid_subjects listed in queries.py, you’ll notice
     that the page number varies with each query because it’s randomized. Try loomfinder s:literature multiple times to see how page=n
     varies with each query randomly from 1 to 10.
+    Additionally, the d:date flag changes behavior depending on whether the range is less than 4 years (e.g., d:1800-1804) or 5 years
+    or more (e.g., d:1800-1805). In the first case, query results are fetched on page=1. In the latter case, results are fetched
+    randomly from pages 1 to 10.
   - Weighing Literary Genres vs. Scientific and Cultural Subjects
 
     To ensure a proportional choice between literary genres and scientific/cultural subjects, we applied weighted random selection.
